@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LoFlow.Pages.Finances.FinancesOverviewPage"
+             Title="Finance Overview">
+    <VerticalStackLayout Padding="20, 0, 20, 0"
+                         Spacing="10">
+        <Label 
+            Text="Date "
+            HorizontalOptions="Start"
+            FontSize="Header"/>
+
+        <HorizontalStackLayout Spacing="20">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
+            </Grid>
+
+            <Border Grid.Row="0" Grid.Column="0" BackgroundColor="PaleGreen" Padding="15">
+                <VerticalStackLayout>
+                    <Label Text="Income" FontAttributes="Bold" />
+                    <Label Text="$5,000" FontSize="18" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Grid.Row="1" Grid.Column="1" BackgroundColor="PaleVioletRed" Padding="15">
+                <VerticalStackLayout>
+                    <Label Text="Expenses" FontAttributes="Bold" />
+                    <Label Text="$5,000" FontSize="18" />
+                </VerticalStackLayout>
+            </Border>
+
+            <Border Grid.Row="0" Grid.Column="2" BackgroundColor="PowderBlue" Padding="15">
+                <VerticalStackLayout>
+                    <Label Text="Savings" FontAttributes="Bold" />
+                    <Label Text="$5,000" FontSize="18" />
+                </VerticalStackLayout>
+            </Border>
+
+        </HorizontalStackLayout>
+    </VerticalStackLayout>
+</ContentPage>
